@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample app</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <!-- import the click-counter -->
+
+    <link rel="import" href="packages/core_elements/core_toolbar.html">
+    <link rel="import" href="packages/paper_elements/paper_icon_button.html">
+    <link rel="import" href="packages/paper_elements/paper_tabs.html">
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+
+    <link rel="stylesheet" href="bloody_violence.css">
+    <style>
+      paper-tabs, core-toolbar {
+        background-color: rgba(29,14,14,0.7);
+        color: #988D6E;
+        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+      }
+      paper-tabs.transparent-teal {
+        background-color: transparent;
+        color: #00bcd4;
+
+      }
+    </style>
+  </head>
+  <body>
+    <core-toolbar class="transparent-teal">
+
+      <paper-icon-button icon="menu" role="button" tabindex="0"></paper-icon-button>
+      <paper-icon-button icon="search" role="button" tabindex="0"></paper-icon-button>
+      <paper-icon-button icon="more-vert" role="button" tabindex="0"></paper-icon-button>
+
+      <div class="bottom fit" horizontal="" center-justified="" end="" layout="">
+        <paper-tabs selected="0" flex="" style="max-width: 500px;">
+          <paper-tab class="">News</paper-tab>
+          <paper-tab class="">Concerts</paper-tab>
+          <paper-tab active="">Bio</paper-tab>
+          <paper-tab class="">Contact</paper-tab>
+          <paper-tab>Store</paper-tab>
+        </paper-tabs>
+      </div>
+
+  </core-toolbar>
+
+  </body>
+</html>
