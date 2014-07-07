@@ -34,24 +34,27 @@
       }
     </style>
   </head>
-  <body>
-    <core-toolbar class="transparent-teal">
-
-      <paper-icon-button icon="menu" role="button" tabindex="0"></paper-icon-button>
-      <paper-icon-button icon="search" role="button" tabindex="0"></paper-icon-button>
-      <paper-icon-button icon="more-vert" role="button" tabindex="0"></paper-icon-button>
-
-      <div class="bottom fit" horizontal="" center-justified="" end="" layout="">
-        <paper-tabs selected="0" flex="" style="max-width: 500px;">
-          <paper-tab class="">News</paper-tab>
-          <paper-tab class="">Concerts</paper-tab>
-          <paper-tab active="">Bio</paper-tab>
-          <paper-tab class="">Contact</paper-tab>
-          <paper-tab>Store</paper-tab>
-        </paper-tabs>
-      </div>
-
-  </core-toolbar>
+  <body >
+    <div id="bgvid" horizontal vertical layout center poster="assets/img/bg.jpg">
+      <video autoplay="true" loop="true">
+        <source src="assets/video/bg.webm" type="video/webm">
+        <source src="assets/video/bg.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div vertical layout top fit>
+      <core-toolbar class="transparent-teal">
+        <paper-icon-button icon="menu" role="button" tabindex="0"></paper-icon-button>
+        <div class="bottom fit" horizontal="" center-justified="" end="" layout="">
+          <paper-tabs selected="0" flex="" style="max-width: 500px;">
+            <paper-tab class="">News</paper-tab>
+            <paper-tab class="">Concerts</paper-tab>
+            <paper-tab active="">Bio</paper-tab>
+            <paper-tab class="">Contact</paper-tab>
+            <paper-tab>Store</paper-tab>
+          </paper-tabs>
+        </div>
+      </core-toolbar>
+    </div>
 
   </body>
 </html>
